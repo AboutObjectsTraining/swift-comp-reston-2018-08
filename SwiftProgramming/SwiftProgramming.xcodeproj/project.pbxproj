@@ -170,10 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				AB9C60391B4D8827006860E0 /* FunctionsLabTests.swift */,
+				B47E39771FB7321E0057BE99 /* CollectionsLabTests.swift */,
 				AB12CF6F1B544456004A846B /* RectangleLabTests.swift */,
 				B47E39721FB7321D0057BE99 /* StructuresLabTests.swift */,
 				AB10253C1B4F323E00387003 /* ClassesLabTests.swift */,
-				B47E39771FB7321E0057BE99 /* CollectionsLabTests.swift */,
 				B47E39741FB7321E0057BE99 /* TuplesLabTests.swift */,
 				B47E396D1FB7321D0057BE99 /* ClosuresTests.swift */,
 				B47E396E1FB7321D0057BE99 /* OptionalsLabTests.swift */,
