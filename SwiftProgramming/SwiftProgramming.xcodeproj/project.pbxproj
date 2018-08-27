@@ -125,7 +125,6 @@
 				B47E396C1FB7321D0057BE99 /* CartTests.swift */,
 				B47E39731FB7321D0057BE99 /* Customer.swift */,
 				B47E39701FB7321D0057BE99 /* LineItems.swift */,
-				B47E39781FB7321E0057BE99 /* MiscTests.swift */,
 				B47E39751FB7321E0057BE99 /* ShoppingCart.swift */,
 			);
 			path = "Labs Model";
@@ -171,13 +170,14 @@
 			children = (
 				AB9C60391B4D8827006860E0 /* FunctionsLabTests.swift */,
 				B47E39771FB7321E0057BE99 /* CollectionsLabTests.swift */,
+				B47E39741FB7321E0057BE99 /* TuplesLabTests.swift */,
 				AB12CF6F1B544456004A846B /* RectangleLabTests.swift */,
 				B47E39721FB7321D0057BE99 /* StructuresLabTests.swift */,
 				AB10253C1B4F323E00387003 /* ClassesLabTests.swift */,
-				B47E39741FB7321E0057BE99 /* TuplesLabTests.swift */,
 				B47E396D1FB7321D0057BE99 /* ClosuresTests.swift */,
 				B47E396E1FB7321D0057BE99 /* OptionalsLabTests.swift */,
 				B47E396F1FB7321D0057BE99 /* ControlFlowLabTests.swift */,
+				B47E39781FB7321E0057BE99 /* MiscTests.swift */,
 				AB2250AE2131860900969E64 /* Labs Model */,
 				AB9C60301B4D87A2006860E0 /* Info.plist */,
 			);

@@ -12,6 +12,15 @@ func calculatedAmount(item: (_: String, price: Double, quantity: Int)) -> Double
     return item.price * Double(item.quantity)
 }
 
+func calculatedAmount2(item: (String, Double, Int)) -> Double {
+    let (_, price, quantity) = item
+    return price * Double(quantity)
+}
+
+func calculatedAmount3(item: LineItem) -> Double {
+    return item.price * Double(item.quantity)
+}
+
 func amount(item: LineItem) -> Double {
     return item.price * Double(item.quantity)
 }

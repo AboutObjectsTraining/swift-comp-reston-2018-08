@@ -1,11 +1,7 @@
 //
-//  MiscTests.swift
-//  Shopping
+// Copyright (C) 2016 About Objects, Inc. All Rights Reserved.
+// See LICENSE.txt for this example's licensing information.
 //
-//  Created by Jonathan Lehr on 10/20/16.
-//  Copyright © 2016 About Objects. All rights reserved.
-//
-
 import XCTest
 
 enum Garment {
@@ -30,15 +26,18 @@ func discount(type: Garment) -> Double {
     }
     return 0.15
 }
+
 func showDiscount(type: Garment) {
     guard case .shirt = type else {
         return
     }
     print("15% discount")
 }
+
 func discount2(forGarmentType type: Garment) -> Double {
     return type == .shirt ? 0.15 : 0.0
 }
+
 func discount3(forGarmentType type: Garment) -> Double {
     guard case .shirt = type else {
         return 0.0
@@ -91,18 +90,6 @@ class MiscTests: XCTestCase
     }
 }
 
-// index is 0
-// index is 2
-// index is 4
-
-
-// pencils, $4.2
-// erasers, $3.0
-
-
-
-
-
 func total(shirts: [LineItem]) -> Double {
     var total = 0.0
     for shirt in shirts {
@@ -121,4 +108,57 @@ func discount1(shirt: LineItem) -> Double {
         return fmin(discount, 30)
     }
     return 5
+}
+
+//
+// Examples from Swift Programming class, 08/25/18
+//
+enum Garment2: CustomStringConvertible {
+    case tie
+    case shirt(size: String)
+    case pants(waist: Int, inseam: Int)
+    
+    // Unwraps associated values to fully describe instance
+    var description: String {
+        switch self {
+        case .tie: return "tie"
+        case .shirt(let s): return "shirt: \(s)"
+        case .pants(let w, let i): return "pants: \(w)X\(i)"
+        }
+    }
+}
+
+struct Foo {
+    var x = 0
+    var y = 0
+}
+
+extension MiscTests
+{
+    func testFoo() {
+        let myFoo = Foo(x: 3, y: 4)
+        print(myFoo)
+        
+        let anotherFoo = Foo()
+        print(anotherFoo)
+    }
+    
+    func testGarment() {
+        let myShirt = Garment2.shirt(size: "Small")
+        print(myShirt)
+        if case Garment2.tie = myShirt {
+            fatalError("Whoops!")
+        }
+    }
+    
+    func testArrayOfGarments() {
+        let items: [Garment2] = [.tie,
+                                 .pants(waist: 31, inseam: 36),
+                                 .shirt(size: "XL"),
+                                 .shirt(size: "M"),
+                                 .pants(waist: 32, inseam: 34)]
+        for item in items {
+            print(item)
+        }
+    }
 }
