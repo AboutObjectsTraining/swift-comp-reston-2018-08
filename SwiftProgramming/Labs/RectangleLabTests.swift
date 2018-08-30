@@ -1,13 +1,12 @@
 import XCTest
 
-private let myRect = Rectangle(
-    origin: Point(x: 5.0, y: 5.0),
-    size: Size(width: 40.0, height: 20.0))
+private let myRect = Rectangle(origin: Point(x: 5.0, y: 5.0),
+                               size: Size(width: 40.0, height: 20.0))
 
 class RectangleLabTests: XCTestCase
 {
-    override func setUp()    { super.setUp(); print("") }
-    override func tearDown() { print(""); super.tearDown() }
+    override func setUp()    { super.setUp(); print() }
+    override func tearDown() { print(); super.tearDown() }
 
     func testArea()
     {

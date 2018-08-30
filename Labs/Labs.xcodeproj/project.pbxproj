@@ -11,6 +11,8 @@
 		ABECCA402131DB0100F827E5 /* LabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA3F2131DB0100F827E5 /* LabsTests.swift */; };
 		ABECCA422131DB0100F827E5 /* Labs.h in Headers */ = {isa = PBXBuildFile; fileRef = ABECCA342131DB0100F827E5 /* Labs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABECCA4C2131E7E800F827E5 /* CollectionsLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA4B2131E7E800F827E5 /* CollectionsLabTests.swift */; };
+		ABECCA4E2134594000F827E5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA4D2134594000F827E5 /* Person.swift */; };
+		ABECCA5021345B0000F827E5 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA4F21345B0000F827E5 /* PersonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		ABECCA3F2131DB0100F827E5 /* LabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsTests.swift; sourceTree = "<group>"; };
 		ABECCA412131DB0100F827E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABECCA4B2131E7E800F827E5 /* CollectionsLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsLabTests.swift; sourceTree = "<group>"; };
+		ABECCA4D2134594000F827E5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		ABECCA4F21345B0000F827E5 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				ABECCA342131DB0100F827E5 /* Labs.h */,
 				ABECCA352131DB0100F827E5 /* Info.plist */,
+				ABECCA4D2134594000F827E5 /* Person.swift */,
 			);
 			path = Labs;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 				ABECCA3F2131DB0100F827E5 /* LabsTests.swift */,
 				ABECCA4B2131E7E800F827E5 /* CollectionsLabTests.swift */,
 				ABECCA412131DB0100F827E5 /* Info.plist */,
+				ABECCA4F21345B0000F827E5 /* PersonTests.swift */,
 			);
 			path = LabsTests;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 				TargetAttributes = {
 					ABECCA302131DB0100F827E5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					ABECCA392131DB0100F827E5 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABECCA4E2134594000F827E5 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABECCA402131DB0100F827E5 /* LabsTests.swift in Sources */,
+				ABECCA5021345B0000F827E5 /* PersonTests.swift in Sources */,
 				ABECCA4C2131E7E800F827E5 /* CollectionsLabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +352,7 @@
 		ABECCA462131DB0100F827E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -360,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.Labs;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,6 +379,7 @@
 		ABECCA472131DB0100F827E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +405,7 @@
 		ABECCA492131DB0100F827E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J7LD9SB6Q;
 				INFOPLIST_FILE = LabsTests/Info.plist;
@@ -411,6 +424,7 @@
 		ABECCA4A2131DB0100F827E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J7LD9SB6Q;
 				INFOPLIST_FILE = LabsTests/Info.plist;

@@ -31,7 +31,8 @@ struct Rectangle: CustomStringConvertible {
     
     var area: Double { return width * height }
     var center: Point {
-        return Point(x: (x + width) / 2.0, y: (y + height) / 2.0)
+        return Point(x: (x + width)  / 2.0,
+                     y: (y + height) / 2.0)
     }
     
     // Methods

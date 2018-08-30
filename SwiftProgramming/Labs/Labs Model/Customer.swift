@@ -11,8 +11,10 @@ struct Address: CustomStringConvertible {
     let state: String
     
     var fullStreet: String {
-        guard let street2 = street2 else { return street }
-        return "\(street), \(street2)"
+        return street2 == nil ? street : "\(street), \(street2 ?? "")"
+        
+//        guard let street2 = street2 else { return street }
+//        return "\(street), \(street2)"
     }
     
     var description: String {
@@ -40,7 +42,7 @@ class Customer: CustomStringConvertible
     
     var description: String {
         let address: Any = self.address ?? "N/A"
-//        let name = self.name == nil ? "N/A" : self.name!
+        //        let name = self.name == nil ? "N/A" : self.name!
         return "name: \(name ?? "N/A")\n" + "address: \(address)\n"
     }
 }

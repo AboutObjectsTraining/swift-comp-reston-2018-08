@@ -113,6 +113,22 @@ func discount1(shirt: LineItem) -> Double {
 //
 // Examples from Swift Programming class, 08/25/18
 //
+
+extension MiscTests
+{
+    func testShout() {
+        42.shout()
+    }
+}
+
+extension Int
+{
+    func shout() {
+        print("MY VALUE IS \(self)")
+    }
+}
+
+
 enum Garment2: CustomStringConvertible {
     case tie
     case shirt(size: String)

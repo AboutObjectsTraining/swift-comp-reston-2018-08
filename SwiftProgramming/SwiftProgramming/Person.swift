@@ -36,6 +36,9 @@ protocol Friendable
 // MARK: - Person Class
 class Person: CustomDebugStringConvertible
 {
+    private static var sequence = 0
+    class var sequenceNumber: Int { sequence += 1; return sequence}
+    
     // MARK: Person Properties
     var firstName: String
     var lastName: String
@@ -45,7 +48,7 @@ class Person: CustomDebugStringConvertible
     
     // MARK: Friendable Properties
     var friendID = 0
-    var friends = [Friendable]()
+    var friends: [Friendable] = []
     
     // MARK: CustomDebugStringConvertible Properties
     var debugDescription: String {
@@ -56,6 +59,7 @@ class Person: CustomDebugStringConvertible
     init(firstName: String, lastName: String) {
         self.firstName = firstName
         self.lastName = lastName
+        self.friendID = Person.sequenceNumber
     }
 }
 
