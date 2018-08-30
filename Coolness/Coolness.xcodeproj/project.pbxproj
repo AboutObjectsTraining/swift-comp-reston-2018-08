@@ -12,6 +12,7 @@
 		ABECCA682135D52F00F827E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABECCA662135D52F00F827E5 /* LaunchScreen.storyboard */; };
 		ABECCA722135FCD600F827E5 /* CoolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA712135FCD600F827E5 /* CoolCell.swift */; };
 		ABECCA742136005200F827E5 /* CoolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA732136005200F827E5 /* CoolController.swift */; };
+		ABECCA962138710A00F827E5 /* CoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECCA952138710A00F827E5 /* CoolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ABECCA692135D52F00F827E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABECCA712135FCD600F827E5 /* CoolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolCell.swift; sourceTree = "<group>"; };
 		ABECCA732136005200F827E5 /* CoolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolController.swift; sourceTree = "<group>"; };
+		ABECCA952138710A00F827E5 /* CoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				ABECCA5D2135D52D00F827E5 /* AppDelegate.swift */,
 				ABECCA712135FCD600F827E5 /* CoolCell.swift */,
 				ABECCA732136005200F827E5 /* CoolController.swift */,
+				ABECCA952138710A00F827E5 /* CoolView.swift */,
 				ABECCA642135D52F00F827E5 /* Assets.xcassets */,
 				ABECCA662135D52F00F827E5 /* LaunchScreen.storyboard */,
 				ABECCA692135D52F00F827E5 /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABECCA742136005200F827E5 /* CoolController.swift in Sources */,
+				ABECCA962138710A00F827E5 /* CoolView.swift in Sources */,
 				ABECCA722135FCD600F827E5 /* CoolCell.swift in Sources */,
 				ABECCA5E2135D52D00F827E5 /* AppDelegate.swift in Sources */,
 			);
