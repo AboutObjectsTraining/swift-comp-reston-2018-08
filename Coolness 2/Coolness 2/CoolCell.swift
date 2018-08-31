@@ -36,6 +36,7 @@ class CoolCell: UIView
         super.init(frame: frame)
         configureLayer()
         configureGestureRecognizer()
+        backgroundColor = UIColor.brown
     }
     
     required init?(coder aDecoder: NSCoder) {
